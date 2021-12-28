@@ -1,3 +1,8 @@
+provider "aws" {
+  version = "~> 2.0"
+  region = "us-west-2"
+}
+
 variable "acc_no" {
   type = string
   default = "869928091105"
@@ -9,11 +14,6 @@ variable "access_key" {
 variable "secret_access_key" {
   type = string
   default = "eWi9sW2iCXumYr9QF3NNvNhsrz86nYHJ7YFiASHg"
-}
-
-provider "aws" {
-  version = "~> 2.0"
-  region = "ap-southeast-1"
 }
 
 resource "aws_vpc" "hitech" {
